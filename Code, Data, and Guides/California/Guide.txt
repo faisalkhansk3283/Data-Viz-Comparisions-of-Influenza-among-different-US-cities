@@ -1,0 +1,11 @@
+How to load the data
+To load the data, begin by downloading the dataset from https://data.world/chhs/fc544658-35c5-4be0-af20-fc703bc57c13. Afterward, ensure to mount your Google Drive to access files stored within it. With your Google Drive successfully mounted, you can then access files using the provided path. Finally, you can utilize libraries like pandas to load the data into a DataFrame.
+
+How to set options/parameters for using the visualization
+You can change the number of viruses shown by increasing or decreasing the '.nlargest(X)'.
+
+How to interact with the system (e.g. "to change the aggregation level of the species category, click on the dropdown in the Options panel" or "hovering over a data item brings up a tooltip containing the following summary statistics....")
+Both visualizations offer interactivity.  The bar graph allows the user to hover over a column to display the virus name, amount of cases, and location. The line graph allows the user to highlight a line ti display the respiratory virus's name, the year, and average flue rate.
+
+How to clear everything and start over in case of error
+Restart google collab and check any dependencies are properly installed.

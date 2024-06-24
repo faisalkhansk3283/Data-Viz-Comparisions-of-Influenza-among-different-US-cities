@@ -1,0 +1,19 @@
+How to load the data
+Download the data of Chicago and newyork from https://data.world/city-of-ny/2nwg-uqyg and https://data.world/chhs/fc544658-35c5-4be0-af20-fc703bc57c13
+To load the data, use the pandas library by installing and importing it. pandas.read_csv(file_name). Change the location path of the data to match the directory you download the data to.
+
+How to set options/parameters for using the visualization
+For setting the visualization, need to create mapbox account where we get a unique api key to use the map visualization.
+If the latitudes and longitudes are not available, we can get those from the mapbox api with the help of zip codes in the dataset.
+To specifically highlight the region on the map, we need geojson file. We will read those files by importing the json library, json.load(file_geojson)
+We can customize the map by using the various parameters referring to the documentation.
+Customized bivariate is plotted to display the population and influenza cases where green represents population scale and pink represents influenza scale
+f there are null/missing values, handle using the pandas library, by replacing the null values with the mean. We have handled by selecting randomly among the mean, max, combination of 3 values nearer to the mean to fill the missing value
+
+How to interact with the system (e.g. "to change the aggregation level of the species category, click on the dropdown in the Options panel" or "hovering over a data item brings up a tooltip containing the following summary statistics....")
+We can display the information when we hover on a region, i.e. displaying the population density, influenza cases and zip codes for the interaction with the visualization.
+We can also add the color filters if we have more colors, just specifying the parameter for the color and we can select/unselect among the colors.
+Can add the legends to specify the details correctly.
+
+How to clear everything and start over in case of error
+In case of error, just restart the kernel and run all. Be sure to check the file paths of the data so it properly loads.
